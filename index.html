@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Book.js"></script>
+    <title>Halo</title>
+</head>
+<body>
+    <div class="container border ">
+        <div class="row d-flex p-3">
+            <div class="col-lg-6">
+                <div class="d-flex">
+                <select  class="form-select me-5" aria-label="Default select example" id="select">
+                    <option selected>Open this select menu</option>
+                  </select>
+
+                  <button type="button" class="me-2 btn btn-success w-100" id="selectbutton">Pick</button>
+                    <div class="align-items-center">
+                        <div id="loading" class="spinner-border spinner-border-sm text-primary">
+                            <span class="visually-hidden">Loading.....</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="text-center">
+                <h1 class="text-center">Binar`s Book Store</h1>
+                <img class="w-75" src="images/undraw_cat.svg" alt="undraw_cat">
+            </div>
+            </div>
+        </div>
+        <div class="row d-flex mt-5">
+            <div class="col-lg-5">
+                <input id="search" class="form-control" type="text" placeholder="Search">
+            </div>
+
+            <div class="col-lg-5">
+                    <select id="categoryselect" class="form-select me-5" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                    </select>
+            </div>
+
+            <div class="col-lg-2">
+                <button id="searchbutton" type="button" class="btn btn-success w-100">Search</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <table class="table p" id="dataTable">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  </tr>
+                  <tr>
+                  </tr>
+                  <tr>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-end">
+                <p>Total :&nbsp;</p>
+                <p id="total">0</p>
+            </div>
+            <div id="searchAlert" class="d-none alert alert-danger" role="alert">
+                Simple Alert !
+            </div>
+        </div>
+    </div>
+    
+<script src="custom.js">
+</script>
+</body>
+</html>

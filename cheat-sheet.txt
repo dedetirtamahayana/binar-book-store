@@ -1,0 +1,68 @@
+# HTML Tag
+1. select
+2. input
+3. table
+4. thead
+5. tbody
+6. tr
+7. th
+8. button
+9. div
+10. h3
+11. p
+12. img
+
+
+# Bootstrap Class
+1. p
+2. w
+2. card
+3. card-body
+4. row
+5. col
+6. table
+7. table-striped
+8. form-control
+9. form-control-sm
+10. form-select
+11. form-select-sm
+12. btn
+13. btn-sm
+14. btn-success
+15. d-flex
+16. justify-content-end
+17. d-block
+18. d-none
+19. alert
+20. alert-danger
+21. alert-success
+
+# Javascript function
+1. Fetch data from server
+```
+fetch('http://api-demo.rjaziz.web.id:3000/books')
+            .then((response) => response.json())
+            .then((data) => data.data)
+            .catch((err) => err);
+```
+
+2. Format `number` to `currency`
+```
+new Intl.NumberFormat('id-ID', {
+            style: 'currency',
+            currency: 'IDR'
+        })
+            .format(<insert your number here>)
+            .replace(/([.,])00$/g, '');
+```
+
+3. Add table row
+```
+// Add some row
+const row = bookTableBody.insertRow();
+
+// Add `td (cell)` to `tr (row)`
+const cell = row.insertCell(index);
+
+// Add `data` to `td (cell)`
+cell.innerHTML = <add some value>;
